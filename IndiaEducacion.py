@@ -19,7 +19,7 @@ st.image("IndiaEducacion.jpg")
 st.sidebar.header("Parámetro")
 # Definimos los parámetros de nuestro deslizador:
 
-Vel_input = st.sidebar.slider("Inversion por alumno", 0, 140)
+Vel_input = st.sidebar.slider("Inversion por alumno", 0, 2000)
 
 # Cargamos el archivo con los datos (.csv)
 df =  pd.read_csv('ODS4India.csv', encoding='latin-1')
