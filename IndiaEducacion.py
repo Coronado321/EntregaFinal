@@ -31,7 +31,7 @@ y = df['Porcentaje']
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 LR = LinearRegression()
-LR.fit(X_train,y_train)
+
 
 # Hacemos la predicción con el modelo y la velocidad seleccionada por el usuario
 b1 = LR.coef_
