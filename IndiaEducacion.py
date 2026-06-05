@@ -37,7 +37,9 @@ LR.fit(X_train,y_train)
 b1 = LR.coef_
 b0 = LR.intercept_
 prediccion = b0 + b1[0]*Vel_input
+r2_score = LR.score(X, y)
 
 # Presentamos loa resultados
 st.subheader('Porcentaje de terminacion de preparatoria')
 st.write(f'El porcentaje de terminacion de preparatoria es: {prediccion}')
+st.write(f'El R^2 score del modelo es: {r2_score:.2f}')
